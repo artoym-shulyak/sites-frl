@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+ 	<meta charset="UTF-8"> 
+ 	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ 	<link
+ 	rel="stylesheet"
+ 	href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20240117162522"
+ 	/> 
+ 	<link rel="stylesheet" href="css/style.min.css?_v=20240117162522"> 
+ 	<title>наша команда</title>
+ </head>
+
+<body>
+	<div class="wrapper">
+		<header id="header" class="header">
+    <div class="header__container">
+        <a href="index.html" class="header__logo">
+            <img src="img/logo.svg" alt=""></a>
+        <nav id="nav" class="header__nav menu">
+            <div id="burger" class="header__burger">
+                <picture><source srcset="img/burger.webp" type="image/webp"><img src="img/burger.png" alt=""></picture>
+            </div>
+            <div id="menu" class="menu__body">
+                <div id="close" class="menu__close">&#10006;</div>
+                <ul class="menu__elems"></ul>
+            </div>
+            <ul id="list" class="menu__list">
+                <li class="menu__li">
+                    <span>О нас</span>
+                    <ul class="menu__sub-list">
+                        <li class="menu__link"><a href="page-about.html">Про нас</a></li>
+                        <li class="menu__link"><a href="page-basket.html">Заказы</a></li>
+                        <li class="menu__link"><a href="page-documents.html">Документы</a></li>
+                    </ul>
+                </li>
+                <li class="menu__li">
+                    <span>Программы и проекты</span>
+                    <ul class="menu__sub-list">
+                        <li class="menu__link"><a href="page-good.html">Товар</a></li>
+                        <li class="menu__link"><a href="page-data.html">программы</a></li>
+                        <li class="menu__link"><a href="page-contacts.html">Контакты</a></li>
+                    </ul>
+                </li>
+                <li class="menu__li">
+                    <span>Афиша</span>
+                    <ul class="menu__sub-list">
+                        <li class="menu__link"><a href="page-trade.html">Партнеры</a></li>
+                        <li class="menu__link"><a href="page-rent.html">Аренда</a></li>
+                        <li class="menu__link"><a href="page-contacts.html">Контакты</a></li>
+                    </ul>
+                </li>
+                <li class="menu__link"><a href="page-trade.html">Магазин</a></li>
+                <li class="menu__link"><a href="page-rent.html">Аренда</a></li>
+                <li class="menu__link"><a href="page-contacts.html">Контакты</a></li>
+            </ul>
+            <button class="header__profily">
+                <img src="img/profily.svg" alt="">
+            </button>
+            <div class="header__item">
+                <img src="img/glasses.svg" alt="">
+            </div>
+        </nav>
+    </div>
+</header>
+
+<div data-page class="data-base">
+    PAGES
+</div>
+<div data-page class="data-base data-base_2">
+    PAGES
+</div>
+<div data-page class="data-base data-base_3">
+    PAGES
+</div>
+<div data-page class="data-base data-base_4">
+    PAGES
+</div>
+
+<div id="data-base-modal" class="data-base-modal">
+    <div class="data-base-moda__list">
+        <a href="index.html">ГЛАВНАЯ</a>
+        <a href="page-about.html">О НАС</a>
+        <a href="page-afisha.html">АФИША</a>
+        <a href="page-contacts.html">КОНТАКТЫ</a>
+        <a href="page-data.html">ПРОГРАММЫ И ПРОЕКТЫ</a>
+        <a href="page-document.html">ДОКУМЕНТЫ</a>
+        <a href="page-good.html">ТОВАР</a>
+        <a href="page-ordering.html">ОФОРМЛЕНИЕ ЗАКАЗА</a>
+        <a href="page-partners.html">ПАРТНЕРЫ</a>
+        <a href="page-pay.html">ПОМОЧЬ НАМ</a>
+        <a href="page-program.html">НАШИ ПРОГРАММЫ</a>
+        <a href="page-programProject.html">ПРОГРАММЫ И ПРОЕКТЫ</a>
+        <a href="page-project.html">ПРОГРАММЫ И ПРОЕКТЫ</a>
+        <a href="page-rent.html">АРЕНДА ЗАЛОВ</a>
+        <a href="page-reports.html">ОТЧЁТЫ</a>
+        <a href="page-team.html">НАША КОМАНДА</a>
+        <a href="page-teamSecond.html">НАША КОМАНДА</a>
+        <a href="page-trade.html">МАГАЗИН</a>
+        <button>ЗАКРЫТЬ</button>
+    </div>
+</div>
+		<main class="main">
+
+			<section class="head">
+				<div class="head__container">
+					<ul class="head__path">
+						<li><a href="index.html">главная</a></li>
+						<span>/</span>
+						<li>о нас</li>
+					</ul>
+					<div class="head__middle">
+						<h2 class="head__title">о нас</h2>
+						<button id="btn-primary"><img src="img/hearth.svg" alt=""><span>хочу
+								помочь</span></button>
+					</div>
+				</div>
+			</section>
+
+			<section class="head-items head-team">
+				<div class="head-items__container">
+					<div class="head__swiper head__swiper-team">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="#">миссия</a>
+							</div>
+							<div class="swiper-slide active">
+								<a href="#">команда</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#">документы и реквизиты</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#">отчёты</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#">наши программы и проекты</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#">наши партнёры</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#">новости</a>
+							</div>
+							<div class="swiper-slide ">
+								<a href="#">мы в сми</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="team">
+				<div class="team__container">
+					<h2 class="team__title"></h2>
+					<ul class="team__list">
+						<li class="team__li active">команда</li>
+						<li class="team__li">лекторы</li>
+						<li class="team__li">педагоги</li>
+						<li class="team__li">волонтеры</li>
+					</ul>
+					<div class="team__body">
+						<div class="team__items">
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-1.webp" type="image/webp"><img src="img/team-1.png" alt=""></picture></div>
+								<h4 class="team__name">Татьяна Тульчинская</h4>
+								<p class="team__descr">куратор проекта</p>
+								<a href="mailto:masha.d@tverskaya15.ru" class="team__info">masha.d@tverskaya15.ru</a>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-2.webp" type="image/webp"><img src="img/team-2.png" alt=""></picture></div>
+								<h4 class="team__name">Мария Михайлова</h4>
+								<p class="team__descr">програмный директор</p>
+								<a href="mailto:masha.d@tverskaya15.ru" class="team__info">masha.d@tverskaya15.ru</a>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-3.webp" type="image/webp"><img src="img/team-3.png" alt=""></picture></div>
+								<h4 class="team__name">Елена Куликова</h4>
+								<p class="team__descr">бухгалтер</p>
+								<a href="mailto:masha.d@tverskaya15.ru" class="team__info">masha.d@tverskaya15.ru</a>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-4.webp" type="image/webp"><img src="img/team-4.png" alt=""></picture></div>
+								<h4 class="team__name">Александра Якушева</h4>
+								<p class="team__descr">координатор детских программ</p>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-5.webp" type="image/webp"><img src="img/team-5.png" alt=""></picture></div>
+								<h4 class="team__name">Маргарита Бабицкая</h4>
+								<p class="team__descr">Маргарита Бабицкая
+									координатор программ
+									для людей с ментальными особенностями</p>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-6.webp" type="image/webp"><img src="img/team-6.png" alt=""></picture></div>
+								<h4 class="team__name">Елена Антонова</h4>
+								<p class="team__descr">фандрайзер</p>
+								<a href="mailto:fundraising@tverskaya15.ru" class="team__info">fundraising@tverskaya15.ru</a>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-7.webp" type="image/webp"><img src="img/team-7.png" alt=""></picture></div>
+								<h4 class="team__name">Михаил Гришин</h4>
+								<p class="team__descr">старший администратор</p>
+								<a href="mailto:masha.d@tverskaya15.ru" class="team__info">masha.d@tverskaya15.ru</a>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-8.webp" type="image/webp"><img src="img/team-8.png" alt=""></picture></div>
+								<h4 class="team__name">Полина Федорова</h4>
+								<p class="team__descr">smm менеджер</p>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-9.webp" type="image/webp"><img src="img/team-9.png" alt=""></picture></div>
+								<h4 class="team__name">Джемият Курбанова</h4>
+								<p class="team__descr">кординатор волонтеров</p>
+								<a href="mailto:fundraising@tverskaya15.ru" class="team__info">fundraising@tverskaya15.ru</a>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-10.webp" type="image/webp"><img src="img/team-10.png" alt=""></picture></div>
+								<h4 class="team__name">Юлия Клечина</h4>
+								<p class="team__descr">старший администратор</p>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-11.webp" type="image/webp"><img src="img/team-11.png" alt=""></picture></div>
+								<h4 class="team__name">Юрий Попов</h4>
+								<p class="team__descr">работник АХЧ</p>
+							</div>
+						</div>
+					</div>
+					<div class="team__body">
+						<div class="team__items">
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-1.webp" type="image/webp"><img src="img/team-1.png" alt=""></picture></div>
+								<h4 class="team__name">Татьяна Тульчинская 2</h4>
+								<p class="team__descr">куратор проекта</p>
+								<a href="mailto:masha.d@tverskaya15.ru" class="team__info">masha.d@tverskaya15.ru</a>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-2.webp" type="image/webp"><img src="img/team-2.png" alt=""></picture></div>
+								<h4 class="team__name">Мария Михайлова2</h4>
+								<p class="team__descr">програмный директор</p>
+								<a href="mailto:masha.d@tverskaya15.ru" class="team__info">masha.d@tverskaya15.ru</a>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-3.webp" type="image/webp"><img src="img/team-3.png" alt=""></picture></div>
+								<h4 class="team__name">Елена Куликова2</h4>
+								<p class="team__descr">бухгалтер</p>
+								<a href="mailto:masha.d@tverskaya15.ru" class="team__info">masha.d@tverskaya15.ru</a>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-4.webp" type="image/webp"><img src="img/team-4.png" alt=""></picture></div>
+								<h4 class="team__name">Александра Якушева</h4>
+								<p class="team__descr">координатор детских программ</p>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-5.webp" type="image/webp"><img src="img/team-5.png" alt=""></picture></div>
+								<h4 class="team__name">Маргарита Бабицкая</h4>
+								<p class="team__descr">Маргарита Бабицкая
+									координатор программ
+									для людей с ментальными особенностями</p>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-6.webp" type="image/webp"><img src="img/team-6.png" alt=""></picture></div>
+								<h4 class="team__name">Елена Антонова</h4>
+								<p class="team__descr">фандрайзер</p>
+								<a href="mailto:fundraising@tverskaya15.ru" class="team__info">fundraising@tverskaya15.ru</a>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-7.webp" type="image/webp"><img src="img/team-7.png" alt=""></picture></div>
+								<h4 class="team__name">Михаил Гришин</h4>
+								<p class="team__descr">старший администратор</p>
+								<a href="mailto:masha.d@tverskaya15.ru" class="team__info">masha.d@tverskaya15.ru</a>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-8.webp" type="image/webp"><img src="img/team-8.png" alt=""></picture></div>
+								<h4 class="team__name">Полина Федорова</h4>
+								<p class="team__descr">smm менеджер</p>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-9.webp" type="image/webp"><img src="img/team-9.png" alt=""></picture></div>
+								<h4 class="team__name">Джемият Курбанова</h4>
+								<p class="team__descr">кординатор волонтеров</p>
+								<a href="mailto:fundraising@tverskaya15.ru" class="team__info">fundraising@tverskaya15.ru</a>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-10.webp" type="image/webp"><img src="img/team-10.png" alt=""></picture></div>
+								<h4 class="team__name">Юлия Клечина</h4>
+								<p class="team__descr">старший администратор</p>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-11.webp" type="image/webp"><img src="img/team-11.png" alt=""></picture></div>
+								<h4 class="team__name">Юрий Попов</h4>
+								<p class="team__descr">работник АХЧ</p>
+							</div>
+						</div>
+					</div>
+					<div class="team__body">
+						<div class="team__items">
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-1.webp" type="image/webp"><img src="img/team-1.png" alt=""></picture></div>
+								<h4 class="team__name">Татьяна Тульчинская 2</h4>
+								<p class="team__descr">куратор проекта</p>
+								<a href="mailto:masha.d@tverskaya15.ru" class="team__info">masha.d@tverskaya15.ru</a>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-2.webp" type="image/webp"><img src="img/team-2.png" alt=""></picture></div>
+								<h4 class="team__name">Мария Михайлова2</h4>
+								<p class="team__descr">програмный директор</p>
+								<a href="mailto:masha.d@tverskaya15.ru" class="team__info">masha.d@tverskaya15.ru</a>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-3.webp" type="image/webp"><img src="img/team-3.png" alt=""></picture></div>
+								<h4 class="team__name">Елена Куликова2</h4>
+								<p class="team__descr">бухгалтер</p>
+								<a href="mailto:masha.d@tverskaya15.ru" class="team__info">masha.d@tverskaya15.ru</a>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-4.webp" type="image/webp"><img src="img/team-4.png" alt=""></picture></div>
+								<h4 class="team__name">Александра Якушева</h4>
+								<p class="team__descr">координатор детских программ</p>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-5.webp" type="image/webp"><img src="img/team-5.png" alt=""></picture></div>
+								<h4 class="team__name">Маргарита Бабицкая</h4>
+								<p class="team__descr">Маргарита Бабицкая
+									координатор программ
+									для людей с ментальными особенностями</p>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-6.webp" type="image/webp"><img src="img/team-6.png" alt=""></picture></div>
+								<h4 class="team__name">Елена Антонова</h4>
+								<p class="team__descr">фандрайзер</p>
+								<a href="mailto:fundraising@tverskaya15.ru" class="team__info">fundraising@tverskaya15.ru</a>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-7.webp" type="image/webp"><img src="img/team-7.png" alt=""></picture></div>
+								<h4 class="team__name">Михаил Гришин</h4>
+								<p class="team__descr">старший администратор</p>
+								<a href="mailto:masha.d@tverskaya15.ru" class="team__info">masha.d@tverskaya15.ru</a>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-8.webp" type="image/webp"><img src="img/team-8.png" alt=""></picture></div>
+								<h4 class="team__name">Полина Федорова</h4>
+								<p class="team__descr">smm менеджер</p>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-9.webp" type="image/webp"><img src="img/team-9.png" alt=""></picture></div>
+								<h4 class="team__name">Джемият Курбанова</h4>
+								<p class="team__descr">кординатор волонтеров</p>
+								<a href="mailto:fundraising@tverskaya15.ru" class="team__info">fundraising@tverskaya15.ru</a>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-10.webp" type="image/webp"><img src="img/team-10.png" alt=""></picture></div>
+								<h4 class="team__name">Юлия Клечина</h4>
+								<p class="team__descr">старший администратор</p>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-11.webp" type="image/webp"><img src="img/team-11.png" alt=""></picture></div>
+								<h4 class="team__name">Юрий Попов</h4>
+								<p class="team__descr">работник АХЧ</p>
+							</div>
+						</div>
+					</div>
+					<div class="team__body">
+						<div class="team__items">
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-1.webp" type="image/webp"><img src="img/team-1.png" alt=""></picture></div>
+								<h4 class="team__name">Татьяна Тульчинская 2</h4>
+								<p class="team__descr">куратор проекта</p>
+								<a href="mailto:masha.d@tverskaya15.ru" class="team__info">masha.d@tverskaya15.ru</a>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-2.webp" type="image/webp"><img src="img/team-2.png" alt=""></picture></div>
+								<h4 class="team__name">Мария Михайлова2</h4>
+								<p class="team__descr">програмный директор</p>
+								<a href="mailto:masha.d@tverskaya15.ru" class="team__info">masha.d@tverskaya15.ru</a>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-3.webp" type="image/webp"><img src="img/team-3.png" alt=""></picture></div>
+								<h4 class="team__name">Елена Куликова2</h4>
+								<p class="team__descr">бухгалтер</p>
+								<a href="mailto:masha.d@tverskaya15.ru" class="team__info">masha.d@tverskaya15.ru</a>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-4.webp" type="image/webp"><img src="img/team-4.png" alt=""></picture></div>
+								<h4 class="team__name">Александра Якушева</h4>
+								<p class="team__descr">координатор детских программ</p>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-5.webp" type="image/webp"><img src="img/team-5.png" alt=""></picture></div>
+								<h4 class="team__name">Маргарита Бабицкая</h4>
+								<p class="team__descr">Маргарита Бабицкая
+									координатор программ
+									для людей с ментальными особенностями</p>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-6.webp" type="image/webp"><img src="img/team-6.png" alt=""></picture></div>
+								<h4 class="team__name">Елена Антонова</h4>
+								<p class="team__descr">фандрайзер</p>
+								<a href="mailto:fundraising@tverskaya15.ru" class="team__info">fundraising@tverskaya15.ru</a>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-7.webp" type="image/webp"><img src="img/team-7.png" alt=""></picture></div>
+								<h4 class="team__name">Михаил Гришин</h4>
+								<p class="team__descr">старший администратор</p>
+								<a href="mailto:masha.d@tverskaya15.ru" class="team__info">masha.d@tverskaya15.ru</a>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-8.webp" type="image/webp"><img src="img/team-8.png" alt=""></picture></div>
+								<h4 class="team__name">Полина Федорова</h4>
+								<p class="team__descr">smm менеджер</p>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-9.webp" type="image/webp"><img src="img/team-9.png" alt=""></picture></div>
+								<h4 class="team__name">Джемият Курбанова</h4>
+								<p class="team__descr">кординатор волонтеров</p>
+								<a href="mailto:fundraising@tverskaya15.ru" class="team__info">fundraising@tverskaya15.ru</a>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-10.webp" type="image/webp"><img src="img/team-10.png" alt=""></picture></div>
+								<h4 class="team__name">Юлия Клечина</h4>
+								<p class="team__descr">старший администратор</p>
+							</div>
+							<div class="team__item">
+								<div class="team__img"><picture><source srcset="img/team-11.webp" type="image/webp"><img src="img/team-11.png" alt=""></picture></div>
+								<h4 class="team__name">Юрий Попов</h4>
+								<p class="team__descr">работник АХЧ</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+    <div class="footer__container">
+        <div class="footer__body">
+            <div class="footer__item">
+                <h3 class="footer__title">рассылка</h3>
+                <p class="footer__descr">Новости, проекты и другая полезная информация раз в неделю</p>
+                <div class="footer__input">
+                    <input type="text" placeholder="ваш email">
+                    <button>
+                        <img src="img/next.svg" alt=""></button>
+                </div>
+            </div>
+            <div class="footer__item">
+                <ul class="footer__list">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Наши проекты</a></li>
+                    <li><a href="#">Афиша</a></li>
+                    <li><a href="#">Лекторий</a></li>
+                    <li><a href="#">Галерея</a></li>
+                </ul>
+                <div class="footer__list">
+                    <li><a href="#">Магазин</a></li>
+                    <li><a href="#">Аренда залов</a></li>
+                    <li><a href="#">Волонтерам</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </div>
+            </div>
+            <div class="footer__item">
+                <div class="footer__box">
+                    <a href="tel:+74991303935" class="footer__phone">+7 499 130 39 35</a>
+                    <a href="mailto:space@tverskaya15.ru" class="footer__mail">space@tverskaya15.ru</a>
+                    <div class="footer__adress">ул. Тверская, 15</div>
+                </div>
+                <div class="footer__social">
+                    <a href="#" class="footer__link">Телеграм</a>
+                    <a href="#" class="footer__link">Вконтакте</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__information">
+            <a href="index.html" class="footer__logo">
+                <img src="img/logo.svg" alt=""></a>
+            <a href="#" class="footer__user">Пользовательское соглашение</a>
+            <p class="footer__info">© 2018-2022 АНО «Тверская«15»</p>
+        </div>
+    </div>
+</footer>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js?_v=20240117162522"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20240117162522"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js?_v=20240117162522"></script>
+
+	<script src="files/main.js?_v=20240117162522"></script>
+</body>
+
+</html>
