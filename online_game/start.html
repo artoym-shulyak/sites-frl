@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240118112858">
+	<title>Вход и регистрация</title>
+</head>
+
+<body>
+    <section class="connect">
+        <div class="connect__container">
+            <div class="connect__body">
+                <h1 class="connect__title">Вход и регистрация</h1>
+                <p class="connect__descr">Войдите с помощью одной из соц. сетей</p>
+                <div class="connect__items">
+                    <div class="connect__item"><img src="img/icon_youtube.svg" alt=""></div>
+                    <div class="connect__item"><img src="img/icon_twitch.svg" alt=""></div>
+                    <div class="connect__item"><img src="img/icon_vk.svg" alt=""></div>
+                    <div class="connect__item"><img src="img/icon_telegram.svg" alt=""></div>
+                    <div class="connect__item"><img src="img/icon_discord.svg" alt=""></div>
+                    <div class="connect__item"><img src="img/icon_google.svg" alt=""></div>
+                </div>
+                <div class="connect__sub-text">
+                    Авторизуясь на  сайте, вы принимаете условия оказания услуг, условия платежей, политику конфедициальности
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal" data-modal="create-offer">
+    <div action="#" class="modal__create">
+        <form class="modal__step _active" data-step="1">
+            <div class="modal__head">
+                <div class="modal__steps">
+                    <span>1</span>
+                    из
+                    <span>2</span>
+                    шага
+                </div>
+                <div data-close class="modal__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <g clip-path="url(#clip0_716_5931)">
+                            <path d="M18 1L1 18" stroke="#8C8CB6" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M1 1L18 18" stroke="#8C8CB6" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_716_5931">
+                                <rect width="20" height="20" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <h2 class="modal__title">
+                <span class=>Создание
+                    игрового предложения</span>
+                <span>Diablo2 /01.10.2023/13:00</span>
+            </h2>
+            <h3 class="modal__lead">Игра</h3>
+            <ul class="modal__chois">
+                <li class="_active" data-choise="individual">Индивидуальная</li>
+                <li data-choise="group">Групповая</li>
+            </ul>
+            <input class="modal__name" type="text" name="name" placeholder="Название">
+            <textarea name="message" placeholder="Комментарии (необязательно)"></textarea>
+            <div id="count-players" class="modal__footer">
+                <div class="modal__sub-text">Количество игроков</div>
+                <div class="modal__box">
+                    <div class="modal__minus" data-delete>-</div>
+                    <div class="modal__count" data-count>0</div>
+                    <div class="modal__plus" data-add>+</div>
+                </div>
+            </div>
+            <label class="modal__agree">
+                <input class="modal__check-box" type="checkbox">
+                <span class="modal__style"></span>
+                Соглашаюсь с <a href="#">политикой конфиденциальностью</a>
+            </label>
+            <div class="modal__btns">
+                <div class="modal__btn" data-next="create-offer"><span>Далее</span></div>
+                <div class="modal__remove">
+                    <span>Удалить</span>
+                    <img src="img/delete.svg" alt="">
+                </div>
+            </div>
+        </form>
+        <form class="modal__step" data-step="2">
+            <div class="modal__head">
+                <div class="modal__steps">
+                    <span>2</span>
+                    из
+                    <span>2</span>
+                    шага
+                </div>
+                <div data-close class="modal__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <g clip-path="url(#clip0_716_5931)">
+                            <path d="M18 1L1 18" stroke="#8C8CB6" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M1 1L18 18" stroke="#8C8CB6" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_716_5931">
+                                <rect width="20" height="20" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <h2 class="modal__title">
+                <span>Создание
+                    игрового предложения</span>
+                <span>Diablo2 /01.10.2023/13:00</span>
+            </h2>
+            <h3 class="modal__lead">
+                <span>Выбери дату</span>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M23 20L21 17M11 13H5M25 11V9C25 7.71133 24.3807 6 23 6H8C6.61929 6 5 7.71133 5 9V23C5 24.2887 6.61929 25 8 25H11M19 4V9M11 4V9M15 25V23L19 19L23 16L25 18L17 25H15Z" stroke="#5D5A88" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </span>
+            </h3>
+            <label class="modal__item" for="#">
+                <div class="modal__text">
+                    Укажите время
+                </div>
+                <input type="text" placeholder="14:00">
+                <span>Москва GMT+3</span>
+            </label>
+            <label class="modal__item" for="#">
+                <div class="modal__text">
+                    Длительность
+                </div>
+                <input type="text" placeholder="1 акт">
+            </label>
+            <label class="modal__item _price" for="#">
+                <div class="modal__text">
+                    Стоимость
+                </div>
+                <input type="text" placeholder="">
+                <div class="modal__price">руб.</div>
+            </label>
+            <label class="modal__item" for="#">
+                <div class="modal__text">
+                    Способ связи
+                </div>
+                <select class="select-css">
+                    <option>Telegram</option>
+                    <option>Apples</option>
+                    <option>Bananas</option>
+                    <option>Grapes</option>
+                    <option>Oranges</option>
+                </select>
+            </label>
+            <div class="modal__btns">
+                <button type="submit" class="modal__btn"><span>Сохранить</span></button>
+                <div class="modal__remove">
+                    <span>Удалить</span>
+                    <img src="img/delete.svg" alt="">
+                </div>
+            </div>
+        </form>
+        <form class="modal__cart" data-cart>
+            <div data-close class="modal__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <g clip-path="url(#clip0_716_5931)">
+                        <path d="M18 1L1 18" stroke="#8C8CB6" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" />
+                        <path d="M1 1L18 18" stroke="#8C8CB6" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_716_5931">
+                            <rect width="20" height="20" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+            <h2 class="modal__title">Добавить карту</h2>
+            <p class="modal__descr">Для того, чтобы получилось привязать карту, она должна соответствовать некоторым требованиям: быть именной, не виртуальной и поддерживать безакцептное списание.</p>
+            <div class="model__inputs">
+                <label for="#">
+                    <input type="text" placeholder="Номер карты">
+                    <picture><source srcset="img/mir.webp" type="image/webp"><img src="img/mir.png" alt=""></picture>
+                </label>
+                <input type="text" placeholder="Срок действия">
+                <input type="text" placeholder="CVC / CVV">
+                <input type="text" placeholder="Имя держателя">
+            </div>
+            <button type="submit" class="modal__btn"><span>Добавить карту</span></button>
+        </form>
+        <form action="#" class="modal__game" data-game>
+            <div data-close class="modal__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <g clip-path="url(#clip0_716_5931)">
+                        <path d="M18 1L1 18" stroke="#8C8CB6" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" />
+                        <path d="M1 1L18 18" stroke="#8C8CB6" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_716_5931">
+                            <rect width="20" height="20" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+            <h2 class="modal__title">Игровое<br> предложение</h2>
+            <h3 class="modal__sub-title">Игра</h3>
+            <div class="modal__elems">
+                <div class="modal__elem">
+                    <div class="modal__g-name">Diablo2</div>
+                    <div class="modal__g-lead">Индивидуальная игра</div>
+                </div>
+                <div class="modal__elem">
+                    <div class="modal__g-name">Сегодня</div>
+                    <div class="modal__g-lead">13:00</div>
+                </div>
+                <div class="modal__elem">
+                    <div class="modal__g-name">1 акт</div>
+                    <div class="modal__g-lead">Бесплатно</div>
+                </div>
+            </div>
+            <h3 class="modal__sub-title">Ваши данные</h3>
+            <input class="modal__name" type="text" placeholder="Имя">
+            <select class="select-css">
+                <option>Способ связи</option>
+                <option>Apples</option>
+                <option>Bananas</option>
+                <option>Grapes</option>
+                <option>Oranges</option>
+            </select>
+            <label class="modal__agree">
+                <input class="modal__check-box" type="checkbox">
+                <span class="modal__style"></span>
+                Соглашаюсь с <a href="#">политикой конфиденциальностью</a>
+            </label>
+            <button type="submit" class="modal__btn"><span>Заказать игру</span></button>
+        </form>
+        <form class="modal__step" data-application="1">
+            <div class="modal__head">
+                <div class="modal__steps">
+                    <span>1</span>
+                    из
+                    <span>2</span>
+                    шага
+                </div>
+                <div data-close class="modal__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <g clip-path="url(#clip0_716_5931)">
+                            <path d="M18 1L1 18" stroke="#8C8CB6" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M1 1L18 18" stroke="#8C8CB6" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_716_5931">
+                                <rect width="20" height="20" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <h2 class="modal__title">
+                Завка на игру
+            </h2>
+            <h3 class="modal__lead">Игра</h3>
+            <input class="modal__name" type="text" name="name" placeholder="Название">
+            <textarea name="message" placeholder="Комментарии (необязательно)"></textarea>
+            <h3 class="modal__sub-title">Ваши данные</h3>
+            <input class="modal__name" type="text" placeholder="Имя">
+            <div class="modal__name">Telegram</div>
+            <input class="modal__name" type="text" placeholder="">
+            <label class="modal__agree">
+                <input class="modal__check-box" type="checkbox">
+                <span class="modal__style"></span>
+                Соглашаюсь с <a href="#">политикой конфиденциальностью</a>
+            </label>
+            <div class="modal__btn" data-next="application"><span>Далее</span></div>
+        </form>
+        <form class="modal__step" data-application="2">
+            <div class="modal__head">
+                <div class="modal__steps">
+                    <span>2</span>
+                    из
+                    <span>2</span>
+                    шага
+                </div>
+                <div data-close class="modal__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <g clip-path="url(#clip0_716_5931)">
+                            <path d="M18 1L1 18" stroke="#8C8CB6" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M1 1L18 18" stroke="#8C8CB6" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_716_5931">
+                                <rect width="20" height="20" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <h2 class="modal__title">
+                Завка на игру
+            </h2>
+            <h3 class="modal__lead">
+                <span>Выбери дату</span>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M23 20L21 17M11 13H5M25 11V9C25 7.71133 24.3807 6 23 6H8C6.61929 6 5 7.71133 5 9V23C5 24.2887 6.61929 25 8 25H11M19 4V9M11 4V9M15 25V23L19 19L23 16L25 18L17 25H15Z" stroke="#5D5A88" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </span>
+            </h3>
+            <label class="modal__item" for="#">
+                <div class="modal__text">
+                    Укажите время
+                </div>
+                <input type="text" placeholder="14:00">
+                <span>Москва GMT+3</span>
+            </label>
+            <label class="modal__item" for="#">
+                <div class="modal__text">
+                    Длительность
+                </div>
+                <input type="text" placeholder="1 акт">
+            </label>
+            <label class="modal__item _price" for="#">
+                <div class="modal__text">
+                    Стоимость
+                </div>
+                <input type="text" placeholder="">
+                <div class="modal__price">руб.</div>
+            </label>
+            <div class="modal__btns">
+                <button type="submit" class="modal__btn"><span>Заявка на игру</span></button>
+            </div>
+        </form>
+    </div>
+</div>
+    <script src="files/main.js?_v=20240118112858"></script>
+</body>
+
+</html>

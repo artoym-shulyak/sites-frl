@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240118112858">
+	<title>Мои входящие</title>
+</head>
+
+<body>
+    <header class="header">
+    <div class="header__container">
+        <a href="index.html" class="header__logo">
+            <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture>
+            <span class="header__name">ИГРАЕМ-ВМЕСТЕ.ОНЛАЙН</span>
+        </a>
+        <div class="header__items">
+            <a href="index.html" class="header__item _active">Мои предложения</a>
+            <a href="home.html" class="header__item">Входящие предложения</a>
+        </div>
+        <a href='setProfile.html' class="header__set"><img src="img/icon-setttings.svg" alt=""></a>
+    </div>
+</header>
+<div class="btn-pages">СТРАНИЦЫ</div>
+<div class="pages">
+    <div class="pages__body">
+        <div data-close class="pages__close"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.72455 0.283027C9.43205 -0.00947264 8.95955 -0.00947264 8.66705 0.283027L4.99955 3.94303L1.33205 0.275527C1.03955 -0.0169727 0.567051 -0.0169727 0.274551 0.275527C-0.0179492 0.568027 -0.0179492 1.04053 0.274551 1.33303L3.94205 5.00053L0.274551 8.66803C-0.0179492 8.96053 -0.0179492 9.43303 0.274551 9.72553C0.567051 10.018 1.03955 10.018 1.33205 9.72553L4.99955 6.05803L8.66705 9.72553C8.95955 10.018 9.43205 10.018 9.72455 9.72553C10.0171 9.43303 10.0171 8.96053 9.72455 8.66803L6.05705 5.00053L9.72455 1.33303C10.0096 1.04803 10.0096 0.568027 9.72455 0.283027Z" fill="#8998D3" />
+            </svg>
+        </div>
+        <div>
+            <div class="pages__title">Страницы "Стример"</div>
+            <ul class="pages__items">
+                <li class="pages__item"><a href="start.html">Старт</a></li>
+                <li class="pages__item"><a href="index.html">Мои предложения(пусто)</a></li>
+                <li class="pages__item"><a href="emptyIncoming.html">Входящие предложения(пусто)</a></li>
+                <li class="pages__item"><a href="offers.html">Мои предложения</a></li>
+                <li class="pages__item"><a href="incoming.html">Входящие предложения</a></li>
+                <li class="pages__item"><a href="settings.html">Настройки</a></li>
+                <li class="pages__item"><a href="redactor.html">Редактирование</a></li>
+            </ul>
+            <div class="pages__title">Модальные окна "Стример"</div>
+             <ul class="pages__items">
+               <li class="pages__item" data-body="create"><a href="#">Создание игрового предложения(Стример)</a></li>
+               <li class="pages__item" data-body="cart"><a href="#">Добавить карту(Стример)</a></li>
+            </ul>
+            <div class="pages__title">Страницы "Игрок"</div>
+            <ul class="pages__items">
+                <li class="pages__item"><a href="emptyGameOffer.html">Игровое предложение(пусто)</a></li>
+                <li class="pages__item"><a href="gameOffer.html">Игровое предложение</a></li>
+                <li class="pages__item"><a href="success.html">Успешно забронировано</a></li>
+            </ul>
+            <div class="pages__title">Модальные окна "Игрок"</div>
+            <ul class="pages__items">
+                <li class="pages__item" data-body="application"><a href="#">Заявка на игру(Игрок)</a></li>
+                <li class="pages__item" data-body="buy"><a href="#">Купить/Заказать "Игровое предложения"(Игрок)</a></li>
+            </ul>
+        </div>
+        <div>
+        </div>
+    </div>
+</div>
+    <main class="offer">
+        <div class="offer__container">
+            <div class="offer__profile">
+                <div class="offer__photo">
+                    <picture><source srcset="img/photo.webp" type="image/webp"><img src="img/photo.png" alt=""></picture>
+                    <div class="offer__hashtag">@SandBro</div>
+                </div>
+                <div class="offer__name">
+                    SandBro
+                </div>
+                <div class="offer__sub-title">
+                    Статистика
+                </div>
+                <div class="offer__items">
+                    <div class="offer__item">
+                        <ul class="offer__list">
+                            <li>
+                                <p>Активные предложения</p>
+                                <span>12</span>
+                            </li>
+                            <li>
+                                <p>Отклонено</p>
+                                <span>4</span>
+                            </li>
+                            <li>
+                                <p>Сыграно</p>
+                                <span>4</span>
+                            </li>
+                            <li>
+                                <p>Истек срок</p>
+                                <span>3</span>
+                            </li>
+                        </ul>
+                        <div class="offer__statistics">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75" fill="none">
+                                <path d="M75 37.5C75 58.2107 58.2107 75 37.5 75C16.7893 75 0 58.2107 0 37.5C0 16.7893 16.7893 0 37.5 0C58.2107 0 75 16.7893 75 37.5ZM12.2063 37.5C12.2063 51.4693 23.5307 62.7937 37.5 62.7937C51.4693 62.7937 62.7937 51.4693 62.7937 37.5C62.7937 23.5307 51.4693 12.2063 37.5 12.2063C23.5307 12.2063 12.2063 23.5307 12.2063 37.5Z" fill="#25C6F9" />
+                                <path d="M75 37.5C75 58.2107 58.2107 75 37.5 75C16.7893 75 0 58.2107 0 37.5C0 16.7893 16.7893 0 37.5 0C58.2107 0 75 16.7893 75 37.5ZM12.2063 37.5C12.2063 51.4693 23.5307 62.7937 37.5 62.7937C51.4693 62.7937 62.7937 51.4693 62.7937 37.5C62.7937 23.5307 51.4693 12.2063 37.5 12.2063C23.5307 12.2063 12.2063 23.5307 12.2063 37.5Z" fill="#25C6F9" />
+                                <path d="M75 37.5C75 58.2107 58.2107 75 37.5 75C16.7893 75 0 58.2107 0 37.5C0 16.7893 16.7893 0 37.5 0C58.2107 0 75 16.7893 75 37.5ZM12.2063 37.5C12.2063 51.4693 23.5307 62.7937 37.5 62.7937C51.4693 62.7937 62.7937 51.4693 62.7937 37.5C62.7937 23.5307 51.4693 12.2063 37.5 12.2063C23.5307 12.2063 12.2063 23.5307 12.2063 37.5Z" fill="#25C6F9" />
+                                <path d="M14.4564 67.0845C8.26635 62.263 3.74455 55.6214 1.52778 48.0948C-0.689004 40.5682 -0.489087 32.5358 2.09937 25.1288C4.68783 17.7218 9.53444 11.3133 15.9567 6.80577C22.379 2.29819 30.0533 -0.0813895 37.8991 0.00212424L37.7689 12.2405C32.4837 12.1842 27.3141 13.7872 22.9879 16.8236C18.6617 19.86 15.3969 24.1769 13.6533 29.1665C11.9096 34.156 11.7749 39.5668 13.2682 44.6369C14.7615 49.707 17.8075 54.181 21.9773 57.4289L14.4564 67.0845Z" fill="#E91E80" />
+                                <path d="M14.4564 67.0845C10.5713 64.0584 7.32032 60.2967 4.88901 56.0141C2.4577 51.7316 0.8937 47.0121 0.286318 42.1251L12.4319 40.6156C12.8411 43.9076 13.8946 47.0868 15.5324 49.9716C17.1702 52.8564 19.3602 55.3904 21.9773 57.4289L14.4564 67.0845Z" fill="#6015FF" />
+                                <path d="M3.03143 22.7295C5.98825 15.8294 10.9479 9.97561 17.2686 5.92561C23.5894 1.8756 30.9801 -0.184145 38.4844 0.0129238L38.1629 12.2554C33.1094 12.1226 28.1323 13.5097 23.8757 16.2371C19.6192 18.9644 16.2793 22.9065 14.2881 27.5532L3.03143 22.7295Z" fill="#8DBF40" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="offer__item">
+                        <ul class="offer__list">
+                            <li>
+                                <p>Всего игровых запросов</p>
+                                <span>2</span>
+                            </li>
+                            <li>
+                                <p>Принятые запросы</p>
+                                <span>2</span>
+                            </li>
+                            <li>
+                                <p>Сыгранные запросы</p>
+                                <span>2</span>
+                            </li>
+                            <li>
+                                <p>Отказанные запросы</p>
+                                <span>5</span>
+                            </li>
+                        </ul>
+                        <div class="offer__statistics">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75" fill="none">
+                                <path d="M75 37.5C75 58.2107 58.2107 75 37.5 75C16.7893 75 0 58.2107 0 37.5C0 16.7893 16.7893 0 37.5 0C58.2107 0 75 16.7893 75 37.5ZM12.2063 37.5C12.2063 51.4693 23.5307 62.7937 37.5 62.7937C51.4693 62.7937 62.7937 51.4693 62.7937 37.5C62.7937 23.5307 51.4693 12.2063 37.5 12.2063C23.5307 12.2063 12.2063 23.5307 12.2063 37.5Z" fill="#25C6F9" />
+                                <path d="M75 37.5C75 58.2107 58.2107 75 37.5 75C16.7893 75 0 58.2107 0 37.5C0 16.7893 16.7893 0 37.5 0C58.2107 0 75 16.7893 75 37.5ZM12.2063 37.5C12.2063 51.4693 23.5307 62.7937 37.5 62.7937C51.4693 62.7937 62.7937 51.4693 62.7937 37.5C62.7937 23.5307 51.4693 12.2063 37.5 12.2063C23.5307 12.2063 12.2063 23.5307 12.2063 37.5Z" fill="#25C6F9" />
+                                <path d="M75 37.5C75 58.2107 58.2107 75 37.5 75C16.7893 75 0 58.2107 0 37.5C0 16.7893 16.7893 0 37.5 0C58.2107 0 75 16.7893 75 37.5ZM12.2063 37.5C12.2063 51.4693 23.5307 62.7937 37.5 62.7937C51.4693 62.7937 62.7937 51.4693 62.7937 37.5C62.7937 23.5307 51.4693 12.2063 37.5 12.2063C23.5307 12.2063 12.2063 23.5307 12.2063 37.5Z" fill="#25C6F9" />
+                                <path d="M37.5 75C27.5544 75 18.0161 71.0491 10.9835 64.0165C3.95088 56.9839 -2.76669e-07 47.4456 0 37.5C2.76669e-07 27.5544 3.95088 18.0161 10.9835 10.9835C18.0161 3.95088 27.5544 -1.186e-07 37.5 0V12.2391C30.8004 12.2391 24.3752 14.9005 19.6378 19.6378C14.9005 24.3752 12.2391 30.8004 12.2391 37.5C12.2391 44.1996 14.9005 50.6248 19.6378 55.3622C24.3752 60.0995 30.8004 62.7609 37.5 62.7609V75Z" fill="#E91E80" />
+                                <path d="M7.93577 60.5696C3.61498 55.0324 0.936076 48.3931 0.204169 41.4078C-0.527739 34.4225 0.716775 27.3721 3.79596 21.0596C6.87515 14.747 11.6652 9.42608 17.6207 5.7028C23.5761 1.97953 30.4574 0.00357823 37.4809 4.85344e-06L37.4872 12.2467C32.7574 12.2491 28.1233 13.5797 24.1128 16.087C20.1023 18.5944 16.8765 22.1776 14.8029 26.4286C12.7293 30.6797 11.8913 35.4276 12.3841 40.1316C12.877 44.8356 14.6811 49.3067 17.5908 53.0356L7.93577 60.5696Z" fill="#8DBF40" />
+                                <path d="M1.27778 27.7943C3.50258 19.4912 8.5124 12.2045 15.4684 7.15434C22.4244 2.10414 30.9043 -0.402996 39.4882 0.0527407L38.8389 12.2822C33.0583 11.9753 27.3478 13.6636 22.6634 17.0645C17.9791 20.4655 14.6054 25.3725 13.1071 30.964L1.27778 27.7943Z" fill="#6015FF" />
+                            </svg> </div>
+                    </div>
+                </div>
+                <button class="offer__send">Добавить предложение</button>
+            </div>
+            <div class="offer__incoming">
+                <h2 class="offer__title">Игровое предложение</h2>
+                <div class="offer__head">
+                    <a href="#" class="offer__add">+ Добавить предложение</a>
+                    <div class="offer__filter" id="filter">Актуально</div>
+                    <ul class="offer__actions" id="filter-items">
+                        <li class="offer__action _active">Актуально</li>
+                        <li class="offer__action">Сыграно</li>
+                        <li class="offer__action">Истек срок</li>
+                        <li class="offer__action">Отклонено</li>
+                    </ul>
+                </div>
+                <div class="offer__items">
+                    <div class="offer__item">
+                        <div class="offer__lead">
+                            <div class="offer__elem">
+                                <div class="offer__name">Diablo2</div>
+                                <div class="offer__sub-name">Индивидуальная игра</div>
+                            </div>
+                            <div class="offer__elem">
+                                <div class="offer__date">Сегодня</div>
+                                <div class="offer__f-elem">11:30</div>
+                            </div>
+                            <div class="offer__elem">
+                                <div class="offer__price">500 руб.</div>
+                                <div class="offer__f-elem">1 акт</div>
+                            </div>
+                        </div>
+                        <div class="offer__person">
+                            <div class="offer__name">
+                                Имя игрока
+                            </div>
+                            <p class="offer__descr">
+                                Привет! Я заметил, что ты играешь в Герои 3 и мне было бы здорово поиграть вместе с тобой. У меня есть опыт в этой игре и я уверен, что мы сможем сыграть в команде и достичь хороших результатов. Давай добавим друг друга в друзья и проведем пару матчей вместе!
+                            </p>
+                        </div>
+                        <div class="offer__btns">
+                            <a href="#" class="offer__take">Принять</a>
+                            <a href="#" class="offer__refuse">Отклонить</a>
+                        </div>
+                    </div>
+                    <div class="offer__item">
+                        <div class="offer__lead">
+                            <div class="offer__elem">
+                                <div class="offer__name">Diablo2</div>
+                                <div class="offer__sub-name">Индивидуальная игра</div>
+                            </div>
+                            <div class="offer__elem">
+                                <div class="offer__date">Сегодня</div>
+                                <div class="offer__f-elem">11:30</div>
+                            </div>
+                            <div class="offer__elem">
+                                <div class="offer__price">500 руб.</div>
+                                <div class="offer__f-elem">1 акт</div>
+                            </div>
+                        </div>
+                        <div class="offer__person">
+                            <div class="offer__name">
+                                Имя игрока
+                            </div>
+                            <p class="offer__descr">
+                                Привет! Я заметил, что ты играешь в Герои 3 и мне было бы здорово поиграть вместе с тобой. У меня есть опыт в этой игре и я уверен, что мы сможем сыграть в команде и достичь хороших результатов. Давай добавим друг друга в друзья и проведем пару матчей вместе!
+                            </p>
+                        </div>
+                        <div class="offer__btns">
+                            <a href="#" class="offer__social">
+                                <img src="img/icon_telegram-light.svg" alt="">
+                                <span>Связаться</span>
+                            </a>
+                            <a href="#" class="offer__refuse">Отклонить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <p class="footer__descr">
+                    © 2023 создано с любовью к лучшему Интернету и для развития игровой сферы в России
+                </p>
+                <a href="" class="footer__item">
+                    <span>Задать вопрос</span> 
+                    <img src="img/icon-telegram.svg" alt="">
+                </a>
+                <p class="footer__lead">
+                    политика конфиденциальности
+                </p>
+            </div>
+        </footer>
+    <div class="modal" data-modal="create-offer">
+    <div action="#" class="modal__create">
+        <form class="modal__step _active" data-step="1">
+            <div class="modal__head">
+                <div class="modal__steps">
+                    <span>1</span>
+                    из
+                    <span>2</span>
+                    шага
+                </div>
+                <div data-close class="modal__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <g clip-path="url(#clip0_716_5931)">
+                            <path d="M18 1L1 18" stroke="#8C8CB6" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M1 1L18 18" stroke="#8C8CB6" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_716_5931">
+                                <rect width="20" height="20" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <h2 class="modal__title">
+                <span class=>Создание
+                    игрового предложения</span>
+                <span>Diablo2 /01.10.2023/13:00</span>
+            </h2>
+            <h3 class="modal__lead">Игра</h3>
+            <ul class="modal__chois">
+                <li class="_active" data-choise="individual">Индивидуальная</li>
+                <li data-choise="group">Групповая</li>
+            </ul>
+            <input class="modal__name" type="text" name="name" placeholder="Название">
+            <textarea name="message" placeholder="Комментарии (необязательно)"></textarea>
+            <div id="count-players" class="modal__footer">
+                <div class="modal__sub-text">Количество игроков</div>
+                <div class="modal__box">
+                    <div class="modal__minus" data-delete>-</div>
+                    <div class="modal__count" data-count>0</div>
+                    <div class="modal__plus" data-add>+</div>
+                </div>
+            </div>
+            <label class="modal__agree">
+                <input class="modal__check-box" type="checkbox">
+                <span class="modal__style"></span>
+                Соглашаюсь с <a href="#">политикой конфиденциальностью</a>
+            </label>
+            <div class="modal__btns">
+                <div class="modal__btn" data-next="create-offer"><span>Далее</span></div>
+                <div class="modal__remove">
+                    <span>Удалить</span>
+                    <img src="img/delete.svg" alt="">
+                </div>
+            </div>
+        </form>
+        <form class="modal__step" data-step="2">
+            <div class="modal__head">
+                <div class="modal__steps">
+                    <span>2</span>
+                    из
+                    <span>2</span>
+                    шага
+                </div>
+                <div data-close class="modal__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <g clip-path="url(#clip0_716_5931)">
+                            <path d="M18 1L1 18" stroke="#8C8CB6" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M1 1L18 18" stroke="#8C8CB6" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_716_5931">
+                                <rect width="20" height="20" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <h2 class="modal__title">
+                <span>Создание
+                    игрового предложения</span>
+                <span>Diablo2 /01.10.2023/13:00</span>
+            </h2>
+            <h3 class="modal__lead">
+                <span>Выбери дату</span>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M23 20L21 17M11 13H5M25 11V9C25 7.71133 24.3807 6 23 6H8C6.61929 6 5 7.71133 5 9V23C5 24.2887 6.61929 25 8 25H11M19 4V9M11 4V9M15 25V23L19 19L23 16L25 18L17 25H15Z" stroke="#5D5A88" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </span>
+            </h3>
+            <label class="modal__item" for="#">
+                <div class="modal__text">
+                    Укажите время
+                </div>
+                <input type="text" placeholder="14:00">
+                <span>Москва GMT+3</span>
+            </label>
+            <label class="modal__item" for="#">
+                <div class="modal__text">
+                    Длительность
+                </div>
+                <input type="text" placeholder="1 акт">
+            </label>
+            <label class="modal__item _price" for="#">
+                <div class="modal__text">
+                    Стоимость
+                </div>
+                <input type="text" placeholder="">
+                <div class="modal__price">руб.</div>
+            </label>
+            <label class="modal__item" for="#">
+                <div class="modal__text">
+                    Способ связи
+                </div>
+                <select class="select-css">
+                    <option>Telegram</option>
+                    <option>Apples</option>
+                    <option>Bananas</option>
+                    <option>Grapes</option>
+                    <option>Oranges</option>
+                </select>
+            </label>
+            <div class="modal__btns">
+                <button type="submit" class="modal__btn"><span>Сохранить</span></button>
+                <div class="modal__remove">
+                    <span>Удалить</span>
+                    <img src="img/delete.svg" alt="">
+                </div>
+            </div>
+        </form>
+        <form class="modal__cart" data-cart>
+            <div data-close class="modal__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <g clip-path="url(#clip0_716_5931)">
+                        <path d="M18 1L1 18" stroke="#8C8CB6" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" />
+                        <path d="M1 1L18 18" stroke="#8C8CB6" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_716_5931">
+                            <rect width="20" height="20" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+            <h2 class="modal__title">Добавить карту</h2>
+            <p class="modal__descr">Для того, чтобы получилось привязать карту, она должна соответствовать некоторым требованиям: быть именной, не виртуальной и поддерживать безакцептное списание.</p>
+            <div class="model__inputs">
+                <label for="#">
+                    <input type="text" placeholder="Номер карты">
+                    <picture><source srcset="img/mir.webp" type="image/webp"><img src="img/mir.png" alt=""></picture>
+                </label>
+                <input type="text" placeholder="Срок действия">
+                <input type="text" placeholder="CVC / CVV">
+                <input type="text" placeholder="Имя держателя">
+            </div>
+            <button type="submit" class="modal__btn"><span>Добавить карту</span></button>
+        </form>
+        <form action="#" class="modal__game" data-game>
+            <div data-close class="modal__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <g clip-path="url(#clip0_716_5931)">
+                        <path d="M18 1L1 18" stroke="#8C8CB6" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" />
+                        <path d="M1 1L18 18" stroke="#8C8CB6" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_716_5931">
+                            <rect width="20" height="20" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+            <h2 class="modal__title">Игровое<br> предложение</h2>
+            <h3 class="modal__sub-title">Игра</h3>
+            <div class="modal__elems">
+                <div class="modal__elem">
+                    <div class="modal__g-name">Diablo2</div>
+                    <div class="modal__g-lead">Индивидуальная игра</div>
+                </div>
+                <div class="modal__elem">
+                    <div class="modal__g-name">Сегодня</div>
+                    <div class="modal__g-lead">13:00</div>
+                </div>
+                <div class="modal__elem">
+                    <div class="modal__g-name">1 акт</div>
+                    <div class="modal__g-lead">Бесплатно</div>
+                </div>
+            </div>
+            <h3 class="modal__sub-title">Ваши данные</h3>
+            <input class="modal__name" type="text" placeholder="Имя">
+            <select class="select-css">
+                <option>Способ связи</option>
+                <option>Apples</option>
+                <option>Bananas</option>
+                <option>Grapes</option>
+                <option>Oranges</option>
+            </select>
+            <label class="modal__agree">
+                <input class="modal__check-box" type="checkbox">
+                <span class="modal__style"></span>
+                Соглашаюсь с <a href="#">политикой конфиденциальностью</a>
+            </label>
+            <button type="submit" class="modal__btn"><span>Заказать игру</span></button>
+        </form>
+        <form class="modal__step" data-application="1">
+            <div class="modal__head">
+                <div class="modal__steps">
+                    <span>1</span>
+                    из
+                    <span>2</span>
+                    шага
+                </div>
+                <div data-close class="modal__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <g clip-path="url(#clip0_716_5931)">
+                            <path d="M18 1L1 18" stroke="#8C8CB6" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M1 1L18 18" stroke="#8C8CB6" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_716_5931">
+                                <rect width="20" height="20" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <h2 class="modal__title">
+                Завка на игру
+            </h2>
+            <h3 class="modal__lead">Игра</h3>
+            <input class="modal__name" type="text" name="name" placeholder="Название">
+            <textarea name="message" placeholder="Комментарии (необязательно)"></textarea>
+            <h3 class="modal__sub-title">Ваши данные</h3>
+            <input class="modal__name" type="text" placeholder="Имя">
+            <div class="modal__name">Telegram</div>
+            <input class="modal__name" type="text" placeholder="">
+            <label class="modal__agree">
+                <input class="modal__check-box" type="checkbox">
+                <span class="modal__style"></span>
+                Соглашаюсь с <a href="#">политикой конфиденциальностью</a>
+            </label>
+            <div class="modal__btn" data-next="application"><span>Далее</span></div>
+        </form>
+        <form class="modal__step" data-application="2">
+            <div class="modal__head">
+                <div class="modal__steps">
+                    <span>2</span>
+                    из
+                    <span>2</span>
+                    шага
+                </div>
+                <div data-close class="modal__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <g clip-path="url(#clip0_716_5931)">
+                            <path d="M18 1L1 18" stroke="#8C8CB6" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M1 1L18 18" stroke="#8C8CB6" stroke-width="2.5" stroke-miterlimit="10" stroke-linecap="round" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_716_5931">
+                                <rect width="20" height="20" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <h2 class="modal__title">
+                Завка на игру
+            </h2>
+            <h3 class="modal__lead">
+                <span>Выбери дату</span>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M23 20L21 17M11 13H5M25 11V9C25 7.71133 24.3807 6 23 6H8C6.61929 6 5 7.71133 5 9V23C5 24.2887 6.61929 25 8 25H11M19 4V9M11 4V9M15 25V23L19 19L23 16L25 18L17 25H15Z" stroke="#5D5A88" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </span>
+            </h3>
+            <label class="modal__item" for="#">
+                <div class="modal__text">
+                    Укажите время
+                </div>
+                <input type="text" placeholder="14:00">
+                <span>Москва GMT+3</span>
+            </label>
+            <label class="modal__item" for="#">
+                <div class="modal__text">
+                    Длительность
+                </div>
+                <input type="text" placeholder="1 акт">
+            </label>
+            <label class="modal__item _price" for="#">
+                <div class="modal__text">
+                    Стоимость
+                </div>
+                <input type="text" placeholder="">
+                <div class="modal__price">руб.</div>
+            </label>
+            <div class="modal__btns">
+                <button type="submit" class="modal__btn"><span>Заявка на игру</span></button>
+            </div>
+        </form>
+    </div>
+</div>
+    <script src="files/main.js?_v=20240118112858"></script>
+</body>
+
+</html>
